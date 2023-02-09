@@ -1,0 +1,285 @@
+//scroll bar
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.table {
+  background: #ffffff;
+  border-radius: 8px;
+  .row.table-grid {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+}
+.table {
+  thead {
+    vertical-align: bottom;
+    width: 100px;
+    background: #24324d !important;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    tr {
+      border: 0 solid;
+      border-color: inherit;
+      border-radius: 5px;
+      display: flex;
+      width: 100%;
+      th {
+        font-size: 13px;
+        font-weight: 500;
+        text-align: start;
+        padding-left: 6px;
+        flex: 1;
+        /* padding-bottom: 17px; */
+      }
+    }
+  }
+  tbody {
+    color: #192840;
+    width: 100%;
+
+    tr {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 8px 8px;
+      td {
+        font-size: 12px;
+        flex: 1;
+      }
+    }
+  }
+  .empty-state-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // height: 100%;
+    min-height: 240px;
+    .icon-wrapper {
+      background-color: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 50%;
+      .bi-search {
+        color: #7eaaae;
+        font-size: 25px;
+      }
+    }
+    .text {
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+}
+
+
+.ngx-pagination {
+  margin: 0 !important;
+  li {
+    color: #b3b3ba !important;
+    font-family: "Inter" !important;
+    font-size: 14px;
+    &.current {
+      color: #4e57a1 !important;
+      background-color: transparent !important;
+      font-weight: 700;
+    }
+    &.pagination-previous,
+    &.pagination-next {
+      padding: 2px 8px;
+      border: 1px solid #e2e2ea;
+      border-radius: 6px;
+      cursor: pointer;
+      &::after,
+      &::before {
+        margin: 0 !important;
+      }
+      a {
+        padding: 0 !important;
+        &::after,
+        &::before {
+          margin: 0 !important;
+        }
+      }
+    }
+    &.pagination-previous {
+      &::before {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+nav .mat-content {
+  flex: initial !important;
+}
+.mat-expansion-indicator {
+  color: #fff !important;
+  // transform: rotate(-90deg) !important;
+  // margin-right: 4px;
+}
+.table > :not(caption) > * > * {
+  border-bottom-width: 0 !important;
+}
+.mat-expansion-panel:not([class*="mat-elevation-z"]) {
+  box-shadow: none !important;
+}
+.mat-expansion-panel {
+  background: transparent !important;
+}
+.mat-expansion-panel
+  .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled="true"]),
+.mat-expansion-panel
+  .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled="true"]),
+.mat-expansion-panel:not(.mat-expanded)
+  .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+  background: transparent !important;
+}
+.mat-expansion-panel-header-description,
+.mat-expansion-indicator::after {
+  color: #fff !important;
+}
+.mat-dialog-container {
+  padding: 0 !important;
+}
+
+.mat-drawer-backdrop {
+  position: fixed !important;
+}
+.ng-select-container {
+  background-color: #fafafc !important;
+  border: 1px solid #edeef6 !important;
+  border-radius: 8px !important;
+  // padding: 12px;
+  // height: 48px !important;
+  height: 40px !important;
+  color: #5d5f6f;
+  width: 100%;
+  outline: 0;
+}
+.input-group-text.with-drop-down.no-padding {
+  border: none;
+}
+.with-drop-down.no-padding .ng-select-container {
+  height: 40px !important;
+  border-radius: 5px !important;
+} 
+.ng-select-multiple .ng-select-container {
+  min-height: 48px !important;
+  height: auto !important;
+}
+.ng-select.ng-select-multiple
+  .ng-select-container
+  .ng-value-container
+  .ng-placeholder {
+  top: 12px !important;
+}
+.ng-select .ng-select-container .ng-value-container .ng-placeholder {
+  color: #b3b3ba;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ng-select.ng-select-focused:not(.ng-select-opened) > .ng-select-container {
+  box-shadow: none;
+}
+.form-control:focus {
+  // border: none !important;
+  box-shadow: none !important;
+}
+.ng-select.ng-select-single .ng-select-container {
+  padding: 5px 8px;
+}
+.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-input {
+  padding: 5px 8px !important;
+}
+
+//circle indicator of accordion
+.circle-indicator .mat-expansion-panel-header-description,
+.mat-expansion-indicator::after {
+  color: #a7a7a7 !important;
+}
+.circle-indicator .mat-expansion-indicator {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: rgba(0,0,0,.38) !important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: #24324D !important;
+}
+.mat-expansion-panel-body {
+  padding: 0 !important;
+}
+.add-currency .ng-dropdown-panel.ng-select-bottom .ng-dropdown-panel-items .ng-option:last-child {
+  color: #00648b;
+}
+.form-control:disabled {
+  background-color: #e9ecef !important;
+    opacity: 1 !important;
+}
+
+.line-autocomplete {
+  cursor: text;
+}
+.line-autocomplete .mat-form-field-wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.line-autocomplete.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 2px 1px 11px !important;
+}
+.line-autocomplete-option.mat-option {
+  height: auto !important;
+  line-height: 34px !important;
+}
+.mat-autocomplete-panel {
+  position: absolute !important;
+  right: -47% !important;
+  width: 182% !important;
+  height: 75vh !important;
+  max-height: none !important;
+}
+
+.filters-wrapper .mat-form-field-infix {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.filters-wrapper .mat-form-field-appearance-fill .mat-form-field-flex {
+  padding: 0 .75em 0 .75em;
+}
+.custom-filter-wrapper {
+  input:focus, input:active, input:focus-visible, select:focus, select:active, select:focus-visible, textarea:focus, textarea:active, textarea:focus-visible {
+    border: none;
+    box-shadow: none;
+} 
+}
+

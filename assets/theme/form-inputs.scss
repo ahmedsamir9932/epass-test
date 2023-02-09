@@ -1,0 +1,122 @@
+label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #24324d;
+}
+.form-select {
+  &:focus,
+  &:active,
+  &:focus-visible {
+    box-shadow: 0 0 10px #dae7e8;
+    caret-color: #24324d;
+    outline: 0;
+  }
+}
+input, select, textarea {
+  background: #ffffff;
+  border: 1px solid #6a6a6a;
+  border-radius: 5px;
+  // padding: 12px;
+  padding: 7px;
+  width: 100%;
+  outline: 0;
+  &::placeholder {
+    color: #b3b3ba;
+    font-size: 14px;
+  }
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border: 1px solid #24324d;
+    box-shadow: 0 0 10px #dae7e8;
+    caret-color: #24324d;
+    outline: 0;
+  }
+  &.error {
+    border: 1px solid #c93c3c;
+    outline: 0;
+  }
+  &:disabled {
+    opacity: 0.8;
+  }
+  &.ng-touched.ng-invalid {
+    border: 1px solid #c93c3c !important;
+    outline: 0 !important;
+  }
+}
+.alert-message {
+  color: #c93c3c;
+  font-size: 14px;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    &.primary{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #C9252B;
+        color: white;
+    }
+    &:disabled{
+        // background-color: #CACDE3;
+        opacity: 0.3;
+        pointer-events: none;
+    }
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  // font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  &.dark{
+      // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background: #24324D;
+      color: white;
+  }
+  &.lg {
+    padding: 12px 20px !important;
+  }
+  &:disabled{
+      // background-color: #CACDE3;
+      opacity: 0.3;
+      pointer-events: none;
+  } 
+}
+button {
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  &.dark-light{
+      background: #00648B;
+      color: white;   
+  }
+  &.lg {
+    padding: 12px 20px !important;
+  }
+  &:disabled{
+      opacity: 0.3;
+      pointer-events: none;
+  } 
+}
+
+ng-select {
+  &.error {
+    border: 1px solid #c93c3c;
+    outline: 0;
+  }
+  &.ng-touched.ng-invalid {
+    border: 1px solid #c93c3c;
+    outline: 0;
+  }
+}
